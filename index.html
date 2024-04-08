@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Work - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="index-page">
     <header>
         <nav>
-            <a href="#" class="logo">Your Name</a>
+            <a href="index.html" class="logo">Allison Karp</a>
             <div class="nav-links">
-                <a href="#" class="active">Work</a>
-                <a href="#">Play</a>
-                <a href="#">About</a>
+                <a href="index.html" class="active">Work</a>
+                <a href="play.html">Play</a>
+                <a href="about.html">About</a>
             </div>
         </nav>
     </header>
@@ -21,15 +22,37 @@
     <main>
         <section id="work">
             <h1>From prototyping to boundless creativity, I'm a multi-faceted engineer with a passion for design.</h1>
-            <!-- Your projects will go here -->
-        </section>
-        <!-- You can add more sections like "Play" and "About" here -->
+            <h2>Work:</h2>
+            <div class="project-gallery">
+                <a href="base.html" class="project-item">
+                    <img src="images/base1.png" alt="Base">
+                    <div class="project-title">BASE Water Sensor</div>
+                </a>
+                <a href="mathmosaic.html" class="project-item">
+                    <img src="images/mathmosaic1.png" alt="MathMosaic">
+                    <div class="project-title">MathMosaic</div>
+                </a>
+                <a href="ims.html" class="project-item">
+                    <img src="images/ims1.png" alt="IMS">
+                    <div class="project-title">Interactive Music Systems</div>
+                </a>
+                <a href="algorealm.html" class="project-item">
+                    <img src="images/algorealm1.png" alt="algorealm">
+                    <div class="project-title">Informal Learning for Children</div>
+                </a>
+                <a href="windenergy.html" class="project-item">
+                    <img src="images/wind1.png" alt="wind energy">
+                    <div class="project-title">Wind Energy Research</div>
+                </a>
+                <!-- Repeat the pattern for each project -->
+            </div>
+            
+        </section>        
     </main>
 
     <footer>
-        <p>Contact Info: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>Contact Info: <a href="mailto:your.email@example.com">akarp@mde.harvard.edu</a></p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
+
