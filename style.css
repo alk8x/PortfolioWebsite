@@ -107,6 +107,22 @@ main {
     max-width: 600px; /* Maximum width of the text column */
 }
 
+.about-content p {
+    font-size: 20px; 
+    font-weight: normal; 
+    color: #2D2D2D; /* Sets the text color, same as h1 for consistency */
+    text-align: left; /* Aligns to the left, adjust as per design */
+    margin-bottom: 15px; /* Adds space below the heading */
+}
+
+.about-content h2 {
+    font-size: 40px; 
+    font-weight: normal; 
+    color: #2D2D2D; /* Sets the text color, same as h1 for consistency */
+    text-align: center; /* Aligns to the left, adjust as per design */
+    margin-bottom: 15px; /* Adds space below the heading */
+}
+
 footer {
     background-color: #f1f1f1;
     text-align: center;
