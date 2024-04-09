@@ -123,6 +123,23 @@ main {
     margin-bottom: 15px; /* Adds space below the heading */
 }
 
+.about-links {
+    text-align: center; /* Centers the content */
+    margin-top: 20px; /* Adds space between the text and the images */
+}
+
+.about-links a {
+    margin: 0 10px; /* Adds space between the images */
+    display: inline-block; /* Displays links side by side */
+    width: 50px; /* Set according to your desired image width */
+}
+
+.about-links img {
+    width: 100%; /* Makes the images responsive within their link containers */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
 footer {
     background-color: #f1f1f1;
     text-align: center;
@@ -186,31 +203,4 @@ footer {
     opacity: 1;
 }
 
-/* Project page: */
-.project-layout {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-.project-info {
-    flex: 1;
-    text-align: center;
-}
-
-.project-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project-image img {
-    width: 100%;
-    max-width: 900px; /* Adjust based on your preference */
-    height: auto;
-}
