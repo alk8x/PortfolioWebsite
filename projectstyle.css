@@ -173,8 +173,8 @@ footer {
 .description-problem {
     display: flex;
     justify-content: center;
-    align-items: top; /* Centers items vertically */
-    gap: 20px; /* Space between the image and the text */
+    align-items: center; /* Centers items vertically */
+    gap: 40px; /* Space between the image and the text */
 }
 
 .problem-image img {
