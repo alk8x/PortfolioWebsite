@@ -884,3 +884,28 @@ video {
     font-size: 18px;
     line-height: 1.8; /* Adjusts the space between lines of text */
 }
+
+/* REFS */
+.references {
+    background-color: white; /* Ensures the background is white */
+    padding: 80px 20px; /* Adjusted to add horizontal padding */
+    margin: 0 auto; /* Centers the section */
+    max-width: 1200px; /* Consistent width with other sections */
+}
+
+.references-heading {
+    text-align: left;
+    margin: 0 auto;
+    padding: 0 20px; /* Matches the padding of the .result section for alignment */
+    max-width: 1200px; /* Ensures alignment with the grid below */
+    font-weight: normal;
+    font-size: 35px;
+    font-family: 'IBM Plex Mono', Arial, sans-serif;
+    padding-bottom: 20px; /* Adds space between the heading and the grid */
+}
+
+.references-text {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.8; /* Adjusts the space between lines of text */
+}
