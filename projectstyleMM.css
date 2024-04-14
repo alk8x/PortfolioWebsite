@@ -863,7 +863,7 @@ video {
 /* RESULT */
 .result {
     background-color: white; /* Ensures the background is white */
-    padding: 80px 20px; /* Adjusted to add horizontal padding */
+    padding: 80px 0px; /* Adjusted to add horizontal padding */
     margin: 0 auto; /* Centers the section */
     max-width: 1200px; /* Consistent width with other sections */
 }
@@ -871,7 +871,6 @@ video {
 .result-heading {
     text-align: left;
     margin: 0 auto;
-    padding: 0 20px; /* Matches the padding of the .result section for alignment */
     max-width: 1200px; /* Ensures alignment with the grid below */
     font-weight: normal;
     font-size: 35px;
@@ -888,7 +887,7 @@ video {
 /* REFS */
 .references {
     background-color: white; /* Ensures the background is white */
-    padding: 80px 20px; /* Adjusted to add horizontal padding */
+    padding: 80px 0px; /* Adjusted to add horizontal padding */
     margin: 0 auto; /* Centers the section */
     max-width: 1200px; /* Consistent width with other sections */
 }
@@ -896,7 +895,6 @@ video {
 .references-heading {
     text-align: left;
     margin: 0 auto;
-    padding: 0 20px; /* Matches the padding of the .result section for alignment */
     max-width: 1200px; /* Ensures alignment with the grid below */
     font-weight: normal;
     font-size: 35px;

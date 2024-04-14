@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wind Energy Research</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="projectstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projectstylewind.css">
 </head>
 <body>
     <header>
@@ -22,17 +24,140 @@
     <main>
         <div class="project-layout">
             <div class="project-info">
-                <h2>Project Title</h2>
-                <p>Project description goes here. This section should succinctly introduce the project, its objectives, the technologies used, and any other relevant details that you want to highlight.</p>
+                <h2>Wind Energy Research</h2>
+                <p><span>Time:</span> August 2020 - June 2021<br>
+                <span>Role:</span> Aerospace Engineer<br>
+                <span>Tools:</span> XFoil, XTurb, SolidWorks, FEA
+                </p>
             </div>
             <div class="project-image">
                 <img src="images/wind1.png" alt="Project Title">
             </div>
         </div>
+        <section class="project-summary">
+            <div class="project-summary-content">
+                <h2>SUMMARY</h2>
+                <p>Through the Penn State Wind Energy Club, we competed in the Collegiate Wind Competition run by NREL and other sponsors to create a miniature working wind turbine for a specific region. 
+                    Each year, the requirements for location, power, and other factors vary. 
+                    This was for an on-shore wind turbine based in Colorado.
+                    The goal was to change from the current three blade design to two with a new airfoil, while still achieving the required power for competition standards. 
+                    Our team took first place overall in the competition for Summer 2021.
+                    I served as Penn State Wind Energy Club Treasurer the following year and have been advising on the team since.</p>
+            </div>
+        </section>
+        <section class="problem">
+            <div class="description-problem">
+                <div class="problem-text">
+                    <h2>PROBLEM</h2>
+                    <p> The problem for this competition was to build and on-shore wind turbine based in Colorado for the Collegiate Wind Competition. 
+                        There were specific power, size, and other requirements given that needed to be followed.
+                        Specifically, the turbine needed to be designed to withstand winds of up to 22 meters per second (m/s).
+                        The parts we could use had strict limitations, and confined the design significantly.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="research">
+            <div class="description-research">
+                <div class="research-text">
+                    <h2>RESEARCH</h2>
+                    <p>
+                        As a part of the aerospace team on this project, the main research involved deciding on a new airfoil to use for this two blade design in order to withstand the required wind and power. 
+                        Using XFoil and XTurb, the team and I tested over 100 different airfoils.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="process">
+            <div class="description-process">
+                <div class="process-text">
+                    <h2>PROCESS</h2>
+                    <p>Once the airfoil was decided, I was tasked with building the new blade in SolidWorks.
+                        We had been using the same blades for many years, so no one at Penn State knew how to model a new blade.
+                        This was a challenge set for me to figure out. I was able to import the text files with the x and y coordinates of the airfoils and map it to a 2D design.
+                        This was done about 52 times with space between each one and set at a certain pitch. 
+                        Once extruded togeter, the new blade was formed.
+                    </p>
+                </div>
+                <div class="process-image">
+                    <img src="images/wind2.png" alt="Base Image 5">
+                </div>
+            </div>
+        </section>
+        <section class="process2">
+            <div class="description-process2">
+                <div class="process2-text">
+                    <p>The blade was then tested in SolidWorks to make sure it could withstand the required load caused by the wind. 
+                        While there were some concerns around the connection to the hub piece, the blade was still strong enough for the required force.
+                    </p>
+                </div>
+                <div class="process2-image">
+                    <img src="images/wind3.png" alt="Base Image 6">
+                </div>
+            </div>
+        </section>
+        <section class="process3">
+            <div class="description-process3">
+                <div class="process3-text">
+                    <p>The file was sent to an outside source to be 3D printed with a strong, stiff material.
+                        However, the printer could not handle the thin edges of the blade and resulted in a geometric pattern. 
+                        This was not ideal for a wind turbine blade, since it no longer represented our airfoil and would not maintain the ideal flow.
+                    </p>
+                </div>
+                <div class="process3-images-container"> <!-- Container for stacking images -->
+                    <div class="process3-image">
+                        <img src="images/wind4.png" alt="Base Image 7">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="process4">
+          <div class="description-process4">
+              <div class="process4-text">
+                  <p>The blades were then going to be tested till failure to decide the factor of safety. 
+                    Even though we were planning to have them reprinted, we needed to test this anyways because of time restraints.
+                    This is where another issue arose - the blades were not stiff enough. 
+                    When weight was added, the blades would bend significantly. 
+                    This was also a good detail to know for the next iteration to make sure the material is changed.
+                    Still, the blades maintained a high factor of safety, even when attached to the hub piece.
+                  </p>
+              </div>
+              <div class="process4-image">
+                  <img src="images/wind5.png" alt="Base Image 8">
+              </div>
+          </div>
+        </section>
+        <section class="process5">
+            <div class="description-process5">
+                <div class="process5-text">
+                    <p>The blades were reprinted and this time were as smooth and stiff as intended.
+                        Due to time, the new blades came a bit later and were not able to be tested on our wind turbine model.
+                    </p>
+                </div>
+                <div class="process5-image">
+                    <img src="images/wind6.png" alt="Base Image 10">
+                </div>
+            </div>
+        </section>
+        <section class="process6">
+            <div class="description-process6">
+                <div class="process6-text">
+                    <p>The electronic and aero team came together to test the final version in the Penn State wind tunnel. 
+                        While the blades were quite faulty, the turbine still performed well. 
+                        Since this was during the pandemic, it was understood that students would have limited access to labs and the competition would be online.
+                        It was for our creative problem-solving and quick thinking that our team was still able to take 1st place at the competition that summer.
+                    </p>
+                </div>
+                <div class="process6-image">
+                    <img src="images/wind7.png" alt="Base Image 10">
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>Contact Info: <a href="mailto:your.email@example.com">akarp@mde.harvard.edu</a></p>
+        <p>Contact Info: <a href="mailto:your.email@example.com">akarp@mde.harvard.edu</a>
+            Content created and coded by Allison Karp</p>
     </footer>
 </body>
 </html>

@@ -1,0 +1,602 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: white;
+    color: #2D2D2D;
+    padding: 0; /* Creates a margin effect */
+    box-sizing: border-box; /* Padding and border are included in the element's width and height */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0; /* Ensures the header extends fully left */
+    right: 0; /* Ensures the header extends fully right */
+    background-color: #98C2B3; /* Adjusted to a specific shade of sage green */
+    color: #2D2D2D;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding: 20px; /* Increased vertical padding to make the header thicker */
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensures nav takes the full width of the header */
+    box-sizing: border-box;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2D2D2D;
+    margin: 0 20px; /* Provides horizontal margin for spacing between links */
+}
+
+.nav-links a.active, .nav-links a:hover {
+    border-bottom: 2px solid #2D2D2D;
+}
+
+.logo {
+    text-decoration: none;
+    color: #2D2D2D;
+    font-weight: 500;
+    margin-right: auto; /* Ensures space around the logo if needed */
+}
+
+main {
+    padding-top: 80px; /* Adjust this value to ensure enough space below the fixed header */
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding does not add to the height */
+}
+
+/* Project page: */
+/* Ensure vertical centering of the text next to an image of dynamic height */
+.project-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Keeps items aligned at the top */
+    gap: 20px;
+    margin: 20px auto; /* Ensures there's no unwanted space at the top */
+    max-width: 1200px;
+}
+
+.project-info, .project-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Stacks children of .project-info vertically */
+    justify-content: center; /* Vertically center content in .project-info */
+    text-align: left; /* Center text inside .project-info */
+    padding: 0 20px; /* Side paddings */
+}
+
+.project-info p {
+    line-height: 2; /* Adjusts the space between lines of text */
+    text-align: left; /* Keeps text centered, reaffirming existing style */
+    padding: 0 20px; /* Adds horizontal padding if needed */
+    margin-bottom: 20px; /* Adds more space below the paragraph */
+}
+
+.project-image {
+    justify-content: center;
+    align-items: center; /* Centers the image both vertically and horizontally */
+}
+
+.project-image img {
+    max-height: 450px; /* Ensures the image does not overflow its container */
+    width: auto; /* Maintains aspect ratio */
+}
+
+.project-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Changed from flex-start to center */
+    padding: 20px;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.project-layout h2 {
+    font-size: 42px; /* Smaller than h1 */
+    font-weight: normal; /* Less emphasis than h1 */
+    color: #2D2D2D; /* Sets the text color, same as h1 for consistency */
+    text-align: center; /* Aligns to the left, adjust as per design */
+    margin-bottom: 25px; /* Adds space below the heading */
+    font-family: 'IBM Plex Mono', Arial, sans-serif;
+}
+
+.project-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Aligns with the max-width of the .project-summary-content */
+}
+
+.project-info span {
+    text-decoration: underline; /* Underlines the text within span */
+}
+
+/* Styling for the new summary section */
+/* Remove outer margins and ensure full width for the .project-summary */
+.project-summary {
+    background-color: #e5e5e5; /* Light grey background */
+    padding: 0; /* Remove padding */
+    text-align: left; /* Left-align the text */
+    margin: 0; /* Remove margin to allow the section to extend fully */
+}
+
+/* Styling for the inner content container */
+.project-summary-content {
+    padding: 20px; /* Add padding back inside the content container */
+    margin: 0 auto; /* Center the content container */
+    max-width: 1200px; /* Adjust based on your preference, aligns with .project-layout */
+    text-align: left; /* Ensure text alignment is consistent */
+}
+
+.project-summary h2 {
+    margin-left: 20px; /* Add if you need extra spacing from the edge */
+    margin-right: 20px; /* Add if you need extra spacing from the edge */
+    color: #2D2D2D; /* Dark grey text, ensuring it's visible on the light background */
+    font-weight: normal;
+    font-size: 35px;
+    font-family: 'IBM Plex Mono', Arial, sans-serif;
+}
+
+.project-summary p {
+    margin-left: 20px; /* Add if you need extra spacing from the edge */
+    margin-right: 20px; /* Add if you need extra spacing from the edge */
+    color: #2D2D2D; /* Dark grey text, ensuring it's visible on the light background */
+    line-height: 1.8; /* Adjusts the space between lines of text */
+    font-weight: normal;
+    font-size: 18px;
+}
+
+/* PROBLEM */
+
+.problem {
+    background-color: white; /* Ensures the background is white */
+    padding: 20px 0; /* Top and bottom padding */
+    margin: 0 auto; /* Removes any default margins */
+    max-width: 1200px; /* Aligns with the width of other sections for consistency */
+}
+
+.description-problem {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers items vertically */
+    gap: 40px; /* Space between the image and the text */
+}
+
+.problem-image img {
+    width: 100%;
+    max-width: 600px; /* Adjust based on the desired size of the GIF */
+    height: auto; /* Maintains the aspect ratio of the GIF */
+}
+
+.problem-text {
+    flex: 1;
+    text-align: right; /* Ensures the text is left-aligned */
+}
+
+.problem-text h2 {
+    font-weight: normal;
+    font-size: 35px;
+    font-family: 'IBM Plex Mono', Arial, sans-serif;
+}
+
+.problem-text p {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.8; /* Adjusts the space between lines of text */
+}
+
+.problem-text span {
+    font-weight: 600;
+    color: #21156E;
+}
+
+/* RESEARCH */
+.research {
+    background-color: white; /* Ensures the background is white */
+    padding: 80px 0; /* Top and bottom padding */
+    margin: 0 auto; /* Removes any default margins */
+    max-width: 1200px; /* Aligns with the width of other sections for consistency */
+}
+
+.description-research {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers items vertically */
+    gap: 20px; /* Space between the image and the text */
+}
+
+.research-image img {
+    width: 100%;
+    max-width: 700px; /* Adjust based on the desired size of the GIF */
+    height: auto; /* Maintains the aspect ratio of the GIF */
+}
+
+.research-text {
+    flex: 1;
+    text-align: left; /* Ensures the text is left-aligned */
+}
+
+.research-text h2 {
+    font-weight: normal;
+    font-size: 35px;
+    font-family: 'IBM Plex Mono', Arial, sans-serif;
+}
+
+.research-text p {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.8; /* Adjusts the space between lines of text */
+}
+
+.research-text span {
+    font-weight: 600;
+    color: #21156E;
+}
+
+/* PROCESS */
+
+.process {
+    background-color: #e5e5e5; /* Light grey background */
+    padding: 0; /* Remove padding */
+    margin: 0;
+}
+
+.description-process {
+    margin: 0 auto; /* Removes any default margins */
+    max-width: 1200px; /* Aligns with the width of other sections for consistency */
+    padding: 20px 0; /* Top and bottom padding */
+    display: flex;
+    justify-content: center;
+    align-items: top; /* Centers items vertically */
+    gap: 20px; /* Space between the image and the text */
+}
+
+.process-image img {
+    width: 100%;
+    max-width: 700px; /* Adjust based on the desired size of the GIF */
+    height: auto; /* Maintains the aspect ratio of the GIF */
+}
+
+.process-text {
+    flex: 1;
+    text-align: left; /* Ensures the text is left-aligned */
+}
+
+.process-text h2 {
+    font-weight: normal;
+    font-size: 35px;
+    font-family: 'IBM Plex Mono', Arial, sans-serif;
+}
+
+.process-text p {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.8; /* Adjusts the space between lines of text */
+}
+
+.process-text span {
+    font-weight: 600;
+    color: #21156E;
+}
+
+.process2 {
+    background-color: #e5e5e5; /* Light grey background */
+    padding: 0; /* Remove padding */
+    margin: 0;
+}
+
+.description-process2 {
+    margin: 0 auto; /* Removes any default margins */
+    max-width: 1200px; /* Aligns with the width of other sections for consistency */
+    padding: 20px 0; /* Top and bottom padding */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers items vertically */
+    gap: 20px; /* Space between the image and the text */
+}
+
+.process2-image img {
+    width: 100%;
+    max-width: 700px; /* Adjust based on the desired size of the GIF */
+    height: auto; /* Maintains the aspect ratio of the GIF */
+}
+
+.process2-text {
+    flex: 1;
+    text-align: left; /* Ensures the text is left-aligned */
+}
+
+.process2-text p {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.8; /* Adjusts the space between lines of text */
+}
+
+.process2-text span {
+    font-weight: 600;
+    color: #21156E;
+}
+
+.process3 {
+    background-color: #e5e5e5; /* Light grey background */
+    padding: 0; /* Remove padding */
+    margin: 0;
+}
+
+.description-process3 {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Aligns items at the start of the container */
+    gap: 30px; /* Space between the text and the image stack */
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.process3-text {
+    flex: 1;
+    text-align: left;
+}
+
+.process3-images-container {
+    display: flex;
+    flex-direction: column; /* Stacks images vertically */
+    gap: 20px; /* Space between stacked images */
+}
+
+.process3-image img, .process3-image video {
+    width: 100%;
+    max-width: 700px; /* Adjust based on your preference */
+    height: auto; /* Maintains aspect ratio for images, may not apply the same for videos */
+}
+
+.process3-text {
+    flex: 1;
+    text-align: left; /* Ensures the text is left-aligned */
+}
+
+.process3-text p {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.8; /* Adjusts the space between lines of text */
+}
+
+.process3-text span {
+    font-weight: 600;
+    color: #21156E;
+}
+
+/* .process_video {
+    background-color: #e5e5e5; /* Light grey background 
+    padding: 100px 0; /* Top and bottom padding to create space within the section 
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Horizontally center the video 
+    align-items: center; /* Vertically center the video 
+    height: 500px; /* Adjust based on your preference 
+}
+
+.video-container {
+    margin: 0 auto; /* Removes any default margins 
+    max-width: 1200px; /* Aligns with the width of other sections for consistency 
+    padding: 20px 0; /* Top and bottom padding 
+    width: 80%; /* Adjust based on your preference 
+    max-width: 640px; /* Adjust based on your preference 
+}
+
+video {
+    width: 100%; /* Makes the video responsive 
+    height: auto; /* Maintains aspect ratio 
+} */
+
+.process4 {
+    background-color: #e5e5e5; /* Light grey background */
+    padding: 0; /* Remove padding */
+    margin: 0;
+}
+
+.description-process4 {
+    margin: 0 auto; /* Removes any default margins */
+    max-width: 1200px; /* Aligns with the width of other sections for consistency */
+    padding: 20px 0; /* Top and bottom padding */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers items vertically */
+    gap: 30px; /* Space between the image and the text */
+}
+
+.process4-image img, .process4-image video {
+    width: 100%;
+    max-width: 300px; /* Adjust based on your preference */
+    height: auto; /* Maintains aspect ratio for images, may not apply the same for videos */
+}
+
+.process4-text {
+    flex: 1;
+    text-align: left; /* Ensures the text is left-aligned */
+}
+
+.process4-text p {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.8; /* Adjusts the space between lines of text */
+}
+
+.process4-text span {
+    font-weight: 600;
+    color: #21156E;
+}
+
+.process5 {
+    background-color: #e5e5e5; /* Light grey background */
+    padding: 0; /* Remove padding */
+    margin: 0;
+}
+
+.description-process5 {
+    margin: 0 auto; /* Removes any default margins */
+    max-width: 1200px; /* Aligns with the width of other sections for consistency */
+    padding: 20px 0; /* Top and bottom padding */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers items vertically */
+    gap: 30px; /* Space between the image and the text */
+}
+
+.process5-image img {
+    width: 100%;
+    max-width: 700px; /* Adjust based on the desired size of the GIF */
+    height: auto; /* Maintains the aspect ratio of the GIF */
+}
+
+.process5-text {
+    flex: 1;
+    text-align: left; /* Ensures the text is left-aligned */
+}
+
+.process5-text p {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.8; /* Adjusts the space between lines of text */
+}
+
+.process5-text span {
+    font-weight: 600;
+    color: #21156E;
+}
+
+.process6 {
+    background-color: #e5e5e5; /* Light grey background */
+    padding: 0; /* Remove padding */
+    margin: 0;
+}
+
+.description-process6 {
+    margin: 0 auto; /* Removes any default margins */
+    max-width: 1200px; /* Aligns with the width of other sections for consistency */
+    padding: 20px 0; /* Top and bottom padding */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers items vertically */
+    gap: 30px; /* Space between the image and the text */
+}
+
+.process6-image img {
+    width: 100%;
+    max-width: 700px; /* Adjust based on the desired size of the GIF */
+    height: auto; /* Maintains the aspect ratio of the GIF */
+}
+
+.process6-text {
+    flex: 1;
+    text-align: left; /* Ensures the text is left-aligned */
+}
+
+.process6-text p {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.8; /* Adjusts the space between lines of text */
+}
+
+.process6-text span {
+    font-weight: 600;
+    color: #21156E;
+}
+
+.process7 {
+    background-color: #e5e5e5; /* Light grey background */
+    padding: 0; /* Remove padding */
+    margin: 0;
+}
+
+.description-process7 {
+    margin: 0 auto; /* Removes any default margins */
+    max-width: 1200px; /* Aligns with the width of other sections for consistency */
+    padding: 20px 0; /* Top and bottom padding */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers items vertically */
+    gap: 30px; /* Space between the image and the text */
+}
+
+.process7-image img {
+    width: 100%;
+    max-width: 700px; /* Adjust based on the desired size of the GIF */
+    height: auto; /* Maintains the aspect ratio of the GIF */
+}
+
+.process7-text {
+    flex: 1;
+    text-align: left; /* Ensures the text is left-aligned */
+}
+
+.process7-text p {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.8; /* Adjusts the space between lines of text */
+}
+
+.process7-text span {
+    font-weight: 600;
+    color: #21156E;
+}
+
+/* RESULT */
+.result {
+    background-color: white; /* Ensures the background is white */
+    padding: 80px 0px; /* Adjusted to add horizontal padding */
+    margin: 0 auto; /* Centers the section */
+    max-width: 1200px; /* Consistent width with other sections */
+    flex-direction: column; /* Aligns the heading and description-result vertically */
+}
+
+.result-heading {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 1200px; /* Ensures alignment with the grid below */
+    font-weight: normal;
+    font-size: 35px;
+    font-family: 'IBM Plex Mono', Arial, sans-serif;
+    padding-bottom: 20px; /* Adds space between the heading and the grid */
+}
+
+.description-result {
+    display: flex;
+    align-items: center; /* Aligns the text and image vertically */
+    gap: 20px; /* Space between the text and the image */
+}
+
+.result-description-text {
+    flex: 1; /* Allows the text block to fill available space */
+    text-align: left; /* Aligns text to the left */
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.8; /* Adjusts the space between lines of text */
+}
+
+.description-result a {
+    display: flex;
+    align-items: center; /* Centers the image within the link */
+    text-decoration: none; /* Removes underline from the link */
+}
+
+.description-result img {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+}
