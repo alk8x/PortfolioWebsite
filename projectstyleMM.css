@@ -356,6 +356,78 @@ footer {
     color: #21156E;
 }
 
+.research5 {
+    background-color: white; /* Ensures the background is white */
+    padding: 40px 0; /* Top and bottom padding */
+    margin: 0 auto; /* Removes any default margins */
+    max-width: 1200px; /* Aligns with the width of other sections for consistency */
+}
+
+.description-research5 {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers items vertically */
+    gap: 40px; /* Space between the image and the text */
+}
+
+.research5-image img {
+    width: 100%;
+    max-width: 700px; /* Adjust based on the desired size of the GIF */
+    height: auto; /* Maintains the aspect ratio of the GIF */
+}
+
+.research5-text {
+    flex: 1;
+    text-align: left; /* Ensures the text is left-aligned */
+}
+
+.research5-text p {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.8; /* Adjusts the space between lines of text */
+}
+
+.research5-text span {
+    font-weight: 600;
+    color: #21156E;
+}
+
+.research6 {
+    background-color: white; /* Ensures the background is white */
+    padding: 40px 0; /* Top and bottom padding */
+    margin: 0 auto; /* Removes any default margins */
+    max-width: 1200px; /* Aligns with the width of other sections for consistency */
+}
+
+.description-research6 {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers items vertically */
+    gap: 40px; /* Space between the image and the text */
+}
+
+.research6-image img {
+    width: 100%;
+    max-width: 700px; /* Adjust based on the desired size of the GIF */
+    height: auto; /* Maintains the aspect ratio of the GIF */
+}
+
+.research6-text {
+    flex: 1;
+    text-align: left; /* Ensures the text is left-aligned */
+}
+
+.research6-text p {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.8; /* Adjusts the space between lines of text */
+}
+
+.research6-text span {
+    font-weight: 600;
+    color: #21156E;
+}
+
 /* PROCESS */
 
 .process {
