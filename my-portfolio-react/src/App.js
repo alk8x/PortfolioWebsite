@@ -12,7 +12,7 @@ import windEnergyImage from './images/wind1.png';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App index-page">
       <Header />
       <main>
         <section id="work">
@@ -48,5 +48,6 @@ function App() {
 }
 
 export default App;
+
 
 

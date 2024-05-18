@@ -1,18 +1,49 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Move down by 20px */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Move up to its original position */
+  }
+}
+
+h1 {
+  animation: fadeInUp 1s ease-out;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', Arial, sans-serif;
   background-color: white;
   color: #2D2D2D;
-  padding: 0 20px; 
-  box-sizing: border-box; 
+  padding: 0 20px; /* Creates a margin effect */
+  box-sizing: border-box; /* Padding and border are included in the element's width and height */
 }
 
 main {
-  padding-top: 120px; 
-  padding-bottom: 60px; 
-  margin: 0 auto; 
-  max-width: 1200px; 
+  padding-top: 120px; /* Increased to account for the thicker fixed header */
+  padding-bottom: 60px; /* Space for the footer */
+  margin: 0 auto; /* Center main content */
+  max-width: 1200px; /* Maximum width of main content */
   box-sizing: border-box;
+}
+
+.index-page h1 {
+  font-size: 45px; /* Adjust the size as needed */
+  font-weight: bold; /* Makes the text bold */
+  color: #2D2D2D; /* Sets the text color */
+  text-align: left; /* Aligns to the left */
+  margin-bottom: 20px; /* Adds space below the heading */
+}
+
+.index-page h2 {
+  font-size: 24px; /* Smaller than h1 */
+  font-weight: normal; /* Less emphasis than h1 */
+  color: #2D2D2D; /* Sets the text color, same as h1 for consistency */
+  text-align: left; /* Aligns to the left */
+  margin-bottom: 15px; /* Adds space below the heading */
 }
 
 .project-gallery {
@@ -20,30 +51,30 @@ main {
   grid-template-columns: repeat(2, 1fr);
   gap: 5px;
   justify-content: center;
-  padding: 20px 0; 
+  padding: 20px 0; /* Add padding at the top and bottom of the gallery */
 }
 
 .project-gallery a {
   display: block;
   text-align: center;
-  border-radius: 5px; 
-  overflow: hidden; 
-  max-width: 600px; 
-  margin: auto; 
+  border-radius: 5px; /* Applies rounded corners to the anchor, matching the images */
+  overflow: hidden; /* Ensures that the hover effect does not spill outside the rounded corners */
+  max-width: 600px; /* Ensures anchor does not exceed this width, matching the images */
+  margin: auto; /* Center images horizontally */
 }
 
 .project-item {
   position: relative;
   display: block;
-  width: 100%; 
-  height: auto; 
+  width: 100%; /* Ensures the item fills its anchor tag */
+  height: auto; /* Adjusts height automatically based on the content */
 }
 
 .project-item img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 5px; 
+  border-radius: 5px; /* Optional: Adds rounded corners to your images */
 }
 
 .project-title {
@@ -52,7 +83,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(152, 194, 179, 0.7); 
+  background-color: rgba(152, 194, 179, 0.7); /* Semi-transparent black */
   color: white;
   display: flex;
   justify-content: center;
@@ -62,25 +93,11 @@ main {
   text-align: center;
   font-size: 36px;
   font-weight: bold;
-  padding: 0 10px; 
+  padding: 0 10px; /* Add some padding to the text */
 }
 
 .project-item:hover .project-title {
   opacity: 1;
 }
 
-.index-page h1 {
-  font-size: 45px; 
-  font-weight: bold; 
-  color: #2D2D2D; 
-  text-align: left; 
-  margin-bottom: 20px; 
-}
 
-.index-page h2 {
-  font-size: 24px; 
-  font-weight: normal; 
-  color: #2D2D2D; 
-  text-align: left; 
-  margin-bottom: 15px; 
-}
