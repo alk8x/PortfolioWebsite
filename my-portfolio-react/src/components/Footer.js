@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer>
             <p>Contact Info: <a href="mailto:your.email@example.com">akarp@mde.harvard.edu</a><br />
-                Content created and coded by Allison Karp</p>
+                Content created and coded by your mom</p>
         </footer>
     );
 };
