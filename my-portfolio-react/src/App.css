@@ -1,3 +1,4 @@
+/* Keyframes for animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -9,18 +10,7 @@
   }
 }
 
-h1 {
-  animation: fadeInUp 1s ease-out;
-}
-
-body {
-  margin: 0;
-  font-family: 'Roboto', Arial, sans-serif;
-  background-color: white;
-  color: #2D2D2D;
-  padding: 0 20px; /* Creates a margin effect */
-  box-sizing: border-box; /* Padding and border are included in the element's width and height */
-}
+/* Styles specific to the App component */
 
 main {
   padding-top: 120px; /* Increased to account for the thicker fixed header */
@@ -30,7 +20,13 @@ main {
   box-sizing: border-box;
 }
 
+.index-page h1, .index-page h2 {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Initially moved down */
+}
+
 .index-page h1 {
+  animation: fadeInUp 1s ease-out forwards;
   font-size: 45px; /* Adjust the size as needed */
   font-weight: bold; /* Makes the text bold */
   color: #2D2D2D; /* Sets the text color */
@@ -39,6 +35,7 @@ main {
 }
 
 .index-page h2 {
+  animation: fadeInUp 1s ease-out 0.5s forwards; /* Add a delay for the h2 */
   font-size: 24px; /* Smaller than h1 */
   font-weight: normal; /* Less emphasis than h1 */
   color: #2D2D2D; /* Sets the text color, same as h1 for consistency */
@@ -49,7 +46,7 @@ main {
 .project-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
+  gap: 20px;
   justify-content: center;
   padding: 20px 0; /* Add padding at the top and bottom of the gallery */
 }
@@ -61,6 +58,7 @@ main {
   overflow: hidden; /* Ensures that the hover effect does not spill outside the rounded corners */
   max-width: 600px; /* Ensures anchor does not exceed this width, matching the images */
   margin: auto; /* Center images horizontally */
+  transition: transform 0.3s ease-in-out; /* Add transition for scaling */
 }
 
 .project-item {
@@ -96,8 +94,13 @@ main {
   padding: 0 10px; /* Add some padding to the text */
 }
 
+.project-item:hover {
+  transform: scale(1.05); /* Scale the project item on hover */
+}
+
 .project-item:hover .project-title {
   opacity: 1;
 }
+
 
 

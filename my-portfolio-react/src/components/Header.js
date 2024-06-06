@@ -1,19 +1,22 @@
+// src/components/Header.js
+
 import React from 'react';
-import './Header.css';  // Create and import CSS file for Header styles
+import { NavLink } from 'react-router-dom';
+import './Header.css'; // Assuming you have a separate CSS file for the Header component
 
 const Header = () => {
-    return (
-        <header>
-            <nav>
-                <a href="index.html" className="logo">Allison Karp</a>
-                <div className="nav-links">
-                    <a href="index.html" className="active">Work</a>
-                    <a href="play.html">Play</a>
-                    <a href="about.html">About</a>
-                </div>
-            </nav>
-        </header>
-    );
+  return (
+    <header>
+      <nav>
+        <NavLink to="/" className="logo">Allison Karp</NavLink>
+        <div className="nav-links">
+          <NavLink to="/" exact activeClassName="active">Work</NavLink>
+          <NavLink to="/play" activeClassName='active'>Play</NavLink>
+          <NavLink to="/about" activeClassName='active'>About</NavLink>
+        </div>
+      </nav>
+    </header>
+  );
 };
 
 export default Header;
